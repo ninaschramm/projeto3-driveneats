@@ -1,3 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
 .container {
     width: 614px;
+    background: #E5E5E5;
+    margin-top: 92px;
+}
+
+.topo {
+    width: 614px;
+    height: 92px;
+    position: fixed;
+    top: 0;
+    background-color: #CF2B2B;
+    color: #FFFFFF;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+    font-family: Righteous;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.opcoes {
+    display: flex;
+    margin-top: 15px;
+    overflow-x: scroll;
+}
+
+.opcao {
+    padding: 15px;
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.opcao img {
+    width: 144px;
+    max-height: 87px;
+    border-radius: 4px;
+}
+
+h4 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.opcao p {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    color: #A6A6A6;
+}
+
+.bottom {
+    width: 614px;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 364px;
+    height: 61px;
+    background: #CBCBCB;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
 }
