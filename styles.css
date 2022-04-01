@@ -31,6 +31,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 h3 {
@@ -61,6 +62,8 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 15px;
+    position: relative;
+    cursor: pointer;
 }
 
 .opcao img {
@@ -100,6 +103,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .button {
@@ -119,4 +123,52 @@ h5 {
     font-weight: 400;
     text-align: center;
     color: #FFFFFF;
+}
+
+ion-icon {
+    display: none;
+    font-size: 20px;
+}
+
+.comida-selecionado {
+    border: 4px solid #32B72F;
+    padding: 11px;
+}
+
+.comida-selecionado ion-icon {
+    display: inline;
+    color: #32B72F;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bebida-selecionado {
+    border: 4px solid #32B72F;
+    padding: 11px;
+}
+
+.bebida-selecionado ion-icon {
+    display: inline;
+    color: #32B72F;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sobremesa-selecionado {
+    border: 4px solid #32B72F;
+    padding: 11px;
+}
+
+.sobremesa-selecionado ion-icon {
+    display: inline;
+    color: #32B72F;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.enable {
+    background-color: #32B72F;
 }
