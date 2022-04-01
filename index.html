@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous:ital,wght@0,100;0,900;1,100;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,900;1,100;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -22,7 +23,7 @@
         <h3>Primeiro, seu prato</h3>
 
         <div class="opcoes">
-            <div class="opcao" onclick="selFood(this)">
+            <div class="opcao comida" onclick="selFood(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -30,7 +31,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selFood(this)">
+            <div class="opcao comida" onclick="selFood(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -38,7 +39,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selFood(this)">
+            <div class="opcao comida" onclick="selFood(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -46,7 +47,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selFood(this)">
+            <div class="opcao comida" onclick="selFood(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -54,7 +55,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selFood(this)">
+            <div class="opcao comida" onclick="selFood(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -66,7 +67,7 @@
         <h3>Agora, sua bebida</h3>
 
         <div class="opcoes">
-            <div class="opcao" onclick="selDrink(this)">
+            <div class="opcao bebida" onclick="selDrink(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -74,7 +75,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selDrink(this)">
+            <div class="opcao bebida" onclick="selDrink(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -82,7 +83,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selDrink(this)">
+            <div class="opcao bebida" onclick="selDrink(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -90,7 +91,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selDrink(this)">
+            <div class="opcao bebida" onclick="selDrink(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -101,7 +102,7 @@
 
         <h3>Por fim, sua sobremesa</h3>
         <div class="opcoes">
-            <div class="opcao" onclick="selDessert(this)">
+            <div class="opcao sobremesa" onclick="selDessert(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -109,7 +110,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selDessert(this)">
+            <div class="opcao sobremesa" onclick="selDessert(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -117,7 +118,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selDessert(this)">
+            <div class="opcao sobremesa" onclick="selDessert(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -125,7 +126,7 @@
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
-            <div class="opcao" onclick="selDessert(this)">
+            <div class="opcao sobremesa" onclick="selDessert(this)">
                 <img src="/img/burger.jpg">
                 <h4>Hamburguinho</h4>
                 <p>No ponto da casa, com batata frita</p>
@@ -136,7 +137,7 @@
     </div>
 
     <div class="bottom">
-        <div class="button" onclick="enableButton()">
+        <div class="button enable" onclick="setOrder()">
             <p>Selecione os 3 itens<br>para fechar o pedido</p>
         </div>
     </div>

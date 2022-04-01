@@ -16,7 +16,7 @@ h2 {
 .container {
     width: 614px;
     background: #E5E5E5;
-    margin-top: 92px;
+    margin: 92px 0;
 }
 
 .topo {
@@ -40,13 +40,13 @@ h3 {
     font-style: normal;
     font-weight: 400;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 20px;
 }
 
 .opcoes {
     display: flex;
-    margin-top: 15px;
+    margin: 15px 0;
     overflow-x: scroll;
 }
 
@@ -130,38 +130,12 @@ ion-icon {
     font-size: 20px;
 }
 
-.comida-selecionado {
+.selecionado {
     border: 4px solid #32B72F;
     padding: 11px;
 }
 
-.comida-selecionado ion-icon {
-    display: inline;
-    color: #32B72F;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-.bebida-selecionado {
-    border: 4px solid #32B72F;
-    padding: 11px;
-}
-
-.bebida-selecionado ion-icon {
-    display: inline;
-    color: #32B72F;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-.sobremesa-selecionado {
-    border: 4px solid #32B72F;
-    padding: 11px;
-}
-
-.sobremesa-selecionado ion-icon {
+.selecionado ion-icon {
     display: inline;
     color: #32B72F;
     position: absolute;

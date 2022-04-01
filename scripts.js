@@ -1,37 +1,51 @@
-function selFood(food) {
-    let elt = document.querySelector(".comida-selecionado");
-if (elt !== null) {
-  elt.classList.remove("comida-selecionado");
-}
-  food.classList.add("comida-selecionado");
 
+function enableButton() {
+  let button = document.querySelector(".button");
+  if (enable1 === false || enable2 === false || enable3 === false) {
+      button.classList.remove("enable");
+  }
+  else {
+    button.classList.add("enable")
+  }
+}
+
+function selFood(food) {
+    let elt = document.querySelector(".comida.selecionado");
+if (elt !== null) {
+  elt.classList.remove("selecionado");
+}
+  food.classList.add("selecionado");
 }
 
 function selDrink(drink) {
-    let elt = document.querySelector(".bebida-selecionado");
+    let elt = document.querySelector(".bebida.selecionado");
 if (elt !== null) {
-  elt.classList.remove("bebida-selecionado");
+  elt.classList.remove("selecionado");
 }
-  drink.classList.add("bebida-selecionado");
-
+  drink.classList.add("selecionado");
 }
 
 function selDessert(dessert) {
-    let elt = document.querySelector(".sobremesa-selecionado");
+    let elt = document.querySelector(".sobremesa.selecionado");
 if (elt !== null) {
-  elt.classList.remove("sobremesa-selecionado");
+  elt.classList.remove("selecionado");
 }
-  dessert.classList.add("sobremesa-selecionado");
+  dessert.classList.add("selecionado");
+}
 
+function setOrder() {
+
+
+let minhaString = `Olá, gostaria de fazer o pedido:
+  - Prato: Frango Yin Yang
+  - Bebida: Coquinha Gelada
+  - Sobremesa: Pudim
+  Total: R$ 27.70`
+
+  alert(minhaString)
+
+  encodeURIComponent(minhaString)
 }
 
-function enableButton() {
-    let elt1 = document.querySelector(".comida-selecionado");
-    let elt2 = document.querySelector(".bebida-selecionado");
-    let elt3 = document.querySelector(".sobremesa-selecionado");
-    let button = document.querySelector(".button");
-    if (elt1 !== null && elt2 !== null && elt3 !==null) {
-        button.classList.add("enable");
-    }
-    
-}
+
+
