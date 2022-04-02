@@ -68,7 +68,7 @@ h3 {
 
 .opcao img {
     width: 144px;
-    max-height: 87px;
+    height: 87px;
     border-radius: 4px;
 }
 
@@ -168,9 +168,6 @@ ion-icon {
     font-weight: 700;
 }
 
-.hidden {
-    display: None
-  }
 
 .confirme {
     background: rgba(255, 255, 255, 0.9);
@@ -189,4 +186,62 @@ ion-icon {
     width: 377px;
     border-radius: 9px;
     background: #50D074;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 0.021em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
 }
+
+.confirmetitulo {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.confirmando {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.8;
+}
+
+.confirmeprecos {
+    text-align: right;
+}
+
+.confirmetotal {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.confirmebutton {
+    width: 330px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #50D074;
+    cursor: pointer;
+}
+
+.cancelar {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.024em;
+    cursor: pointer;
+}
+
+.hidden {
+    display: None
+  }

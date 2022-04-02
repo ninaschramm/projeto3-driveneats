@@ -23,10 +23,17 @@
 
         <div class="confirme hidden">
             <div class="pedidoconfirmado">
-
+                <div class="confirmetitulo"><strong>Confirme seu pedido</strong></div>
+                <div class="confirmando">
+                <div class="confirmeescolhas"></div>
+                <div class="confirmeprecos"></div>
+                </div>
+                <div class="confirmetotal"><p>TOTAL</p><p id="total"></p></div>
+                <div class="confirmebutton" onclick="setWpp()"><p>Tudo certo, pode pedir!</p></div>
+                <div class="cancelar" onclick="cancel()"><p>cancelar</p>
+                </div>
             </div>
         </div>
-
 
         <h3>Primeiro, seu prato</h3>
 
@@ -40,34 +47,34 @@
             </div>
 
             <div class="opcao comida" onclick="selFood(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/kebab.jpg">
+                <h4>Kebab original</h4>
+                <p>O melhor da comida árabe</p>
+                <h5>R$12,75</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
             <div class="opcao comida" onclick="selFood(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/pizza.jpeg">
+                <h4>Pizza Napolitana</h4>
+                <p>Pizza feita à moda de Napoli</p>
+                <h5>R$32,00</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
             <div class="opcao comida" onclick="selFood(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/risotto.jpg">
+                <h4>Risotto de Camarão</h4>
+                <p>O melhor risotto da cidade</p>
+                <h5>R$26,70</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
             <div class="opcao comida" onclick="selFood(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/coxinha.jpg">
+                <h4>Coxinha</h4>
+                <p>A clássica coxinha de frango com catupiry</p>
+                <h5>R$9,90</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
         </div>
@@ -76,34 +83,34 @@
 
         <div class="opcoes">
             <div class="opcao bebida" onclick="selDrink(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/breja.jpg">
+                <h4>Cervejinha</h4>
+                <p>Estúpidamente gelada</p>
+                <h5>R$11,90</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
             <div class="opcao bebida" onclick="selDrink(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/coquinha.jpg">
+                <h4>Coquinha gelada</h4>
+                <p>Garrafa de 600ml</p>
+                <h5>R$6,90</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
             <div class="opcao bebida" onclick="selDrink(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/Vinho-Tinto.jpg">
+                <h4>Vinho tinto</h4>
+                <p>Taça, aprox. 275ml</p>
+                <h5>R$18,00</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
             <div class="opcao bebida" onclick="selDrink(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/aguadecoco.png">
+                <h4>Água de côco</h4>
+                <p>Gelada pra curar qualquer ressaca</p>
+                <h5>R$9,80</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
         </div>
@@ -111,34 +118,34 @@
         <h3>Por fim, sua sobremesa</h3>
         <div class="opcoes">
             <div class="opcao sobremesa" onclick="selDessert(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
+                <img src="/img/pudim.jpg">
+                <h4>Pudim</h4>
+                <p>O clássico, dispensa apresentações</p>
+                <h5>R$11,90</h5>
+                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+            </div>
+
+            <div class="opcao sobremesa" onclick="selDessert(this)">
+                <img src="/img/ambrosia.jpg">
+                <h4>Ambrosia</h4>
+                <p>Não é a toa que é a comida dos deuses</p>
+                <h5>R$12,90</h5>
+                <ion-icon name="checkmark-circle-sharp"></ion-icon>
+            </div>
+
+            <div class="opcao sobremesa" onclick="selDessert(this)">
+                <img src="/img/cheesecake.jpg">
+                <h4>Cheesecake</h4>
+                <p>Com cobertura de frutas vermelhas</p>
                 <h5>R$18,90</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
 
             <div class="opcao sobremesa" onclick="selDessert(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
-                <ion-icon name="checkmark-circle-sharp"></ion-icon>
-            </div>
-
-            <div class="opcao sobremesa" onclick="selDessert(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
-                <ion-icon name="checkmark-circle-sharp"></ion-icon>
-            </div>
-
-            <div class="opcao sobremesa" onclick="selDessert(this)">
-                <img src="/img/burger.jpg">
-                <h4>Hamburguinho</h4>
-                <p>No ponto da casa, com batata frita</p>
-                <h5>R$18,90</h5>
+                <img src="/img/tiramisu.jpg">
+                <h4>Tiramisú</h4>
+                <p>Versão da famosa sobremesa italiana</p>
+                <h5>R$21,90</h5>
                 <ion-icon name="checkmark-circle-sharp"></ion-icon>
             </div>
         </div>
