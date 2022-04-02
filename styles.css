@@ -14,13 +14,13 @@ h2 {
 }
 
 .container {
-    width: 614px;
+    width: 412px;
     background: #E5E5E5;
     margin: 92px 0;
 }
 
 .topo {
-    width: 614px;
+    width: 412px;
     height: 92px;
     position: fixed;
     top: 0;
@@ -95,7 +95,7 @@ h5 {
 }
 
 .bottom {
-    width: 614px;
+    width: 412px;
     height: 92px;
     position: fixed;
     bottom: 0;
@@ -171,7 +171,7 @@ ion-icon {
 
 .confirme {
     background: rgba(255, 255, 255, 0.9);
-    width: 614px;
+    width: 412px;
     height: 100%;
     position: fixed;
     top: 0;
