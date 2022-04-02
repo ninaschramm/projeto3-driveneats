@@ -20,6 +20,14 @@
     </div>
 
     <div class="container">
+
+        <div class="confirme hidden">
+            <div class="pedidoconfirmado">
+
+            </div>
+        </div>
+
+
         <h3>Primeiro, seu prato</h3>
 
         <div class="opcoes">
@@ -137,9 +145,20 @@
     </div>
 
     <div class="bottom">
-        <div class="button enable" onclick="setOrder()">
+        <div class="buttons">
+            <div class="button-disable comida">
+                 <p>Selecione os 3 itens<br>para fechar o pedido</p>
+            </div>
+            <div class="button-disable bebida">
+                <p>Selecione os 3 itens<br>para fechar o pedido</p>
+           </div>
+           <div class="button-disable sobremesa">
             <p>Selecione os 3 itens<br>para fechar o pedido</p>
-        </div>
+       </div>
+        <div class="button-enable" onclick="setOrder()">
+           <p>Fechar pedido</p>
+        </div></div>
+        
     </div>
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

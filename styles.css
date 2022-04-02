@@ -106,17 +106,38 @@ h5 {
     z-index: 1;
 }
 
-.button {
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.button-disable {
+    background: #CBCBCB;
+    position: fixed;
     width: 364px;
     height: 61px;
-    background: #CBCBCB;
     border-radius: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    z-index: 2;
 }
 
-.button p {
+.button-enable {
+    background: #32B72F;
+    position: fixed;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}
+
+.buttons p {
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
@@ -143,6 +164,29 @@ ion-icon {
     right: 10px;
 }
 
-.enable {
-    background-color: #32B72F;
+.button-enable p {
+    font-weight: 700;
+}
+
+.hidden {
+    display: None
+  }
+
+.confirme {
+    background: rgba(255, 255, 255, 0.9);
+    width: 614px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedidoconfirmado {
+    height: 353px;
+    width: 377px;
+    border-radius: 9px;
+    background: #50D074;
 }
