@@ -1,3 +1,7 @@
+let myButton = document.getElementById("mainbutton");
+myButton.disabled = true;
+
+let enable1 = false;
 //Função que seleciona o prato
 function selFood(food) {
     let elt = document.querySelector(".comida.selecionado");
@@ -6,7 +10,7 @@ if (elt !== null) {
   elt.classList.remove("selecionado");
 }
   food.classList.add("selecionado");
-  buttonFood.classList.add("hidden"); //pra liberar o botão de fechar pedido
+  enable1 = true;
     //Aqui adiciona ID ao prato escolhida para resgatá-la nas próximas funções
   let pratoselecionado = food.getElementsByTagName('h4');
   let check = document.getElementById("pratoselecionado")
@@ -21,8 +25,11 @@ if (elt !== null) {
     checkprice.removeAttribute("id")
   }
   price[0].setAttribute("id", "price1");
+
+  checkEnable()
 }
 
+let enable2 = false;
 //Função que seleciona a bebida
 function selDrink(drink) {
     let elt = document.querySelector(".bebida.selecionado");
@@ -31,7 +38,7 @@ if (elt !== null) {
   elt.classList.remove("selecionado");
 }
   drink.classList.add("selecionado");
-  buttonFood.classList.add("hidden"); //pra liberar o botão de fechar pedido
+  enable2 = true;
     //Aqui adiciona ID à bebida escolhida para resgatá-la nas próximas funções
   let bebidaselecionado = drink.getElementsByTagName('h4');
   let check = document.getElementById("bebidaselecionado")
@@ -47,8 +54,10 @@ if (elt !== null) {
   }
   price[0].setAttribute("id", "price2");
 
+  checkEnable()
 }
 
+let enable3 = false;
 //Função que seleciona a sobremesa
 function selDessert(dessert) {
     let elt = document.querySelector(".sobremesa.selecionado");
@@ -57,7 +66,7 @@ if (elt !== null) {
   elt.classList.remove("selecionado");
 }
   dessert.classList.add("selecionado");
-  buttonFood.classList.add("hidden"); //pra liberar o botão de fechar pedido
+  enable3 = true;
   //Aqui adiciona ID à sobremesa escolhida para resgatá-la nas próximas funções
   let sobremesaselecionado = dessert.getElementsByTagName('h4');
   let check = document.getElementById("sobremesaselecionado")
@@ -72,6 +81,19 @@ if (elt !== null) {
     checkprice.removeAttribute("id")
   }
   price[0].setAttribute("id", "price3");
+
+  checkEnable()
+}
+
+function checkEnable () {
+  if (enable1 === true && enable2 === true && enable3 === true) {
+    myButton.disabled = false;
+    myButton.textContent = "Fechar pedido";
+    myButton.classList.add("enabled");
+  }
+  else {
+    myButton.disabled = true;
+  }
 }
 
 
@@ -164,8 +186,3 @@ function cancel() {
  cancelado.classList.add("hidden")
 }
 
-
-
- 
-
-//  encodeURIComponent(minhaString)
